@@ -3,13 +3,11 @@ import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData"
-//import RecipeMaker from "./RecipeMaker";
+
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
 
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
   const initialFormState = {
     name: "",
     cuisine: "",
@@ -17,7 +15,6 @@ function App() {
     ingredients: "",
     preparation: "",
   }
-  //const initialFormState = RecipeData
   
   const [formData, setFormData] = useState({...initialFormState})
   const handleChange = ({target}) => {

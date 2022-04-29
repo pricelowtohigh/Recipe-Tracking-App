@@ -3,10 +3,6 @@ import "./RecipeCreate.css"
 
 function RecipeCreate({initialFormState, formData, handleChange, handleSubmit}) {
 
-  // DONE?: When the form is submitted, a new recipe should be created, and the form contents cleared.
-  // TODO: Add the required input and textarea form elements.
-  // DONE?: Add the required submit and change handlers 
-
   return (
     <div>
       <form name="create" onSubmit={handleSubmit} id="form" >
